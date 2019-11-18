@@ -1,0 +1,1275 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    outline: none;
+}
+
+*:hover, *:focus, *:active{
+	outline: none;
+}
+
+body {
+    line-height:1;
+    font-size: 24px;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+    color:#232323;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@font-face {
+	    font-family: CallunaBold;
+	    src: url('../fonts/calluna-bold-webfont.eot');
+	    src: url('../fonts/calluna-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('../fonts/calluna-bold-webfont.woff') format('woff'),
+	         url('../fonts/calluna-bold-webfont.ttf') format('truetype'),
+	         url('../fonts/calluna-bold-webfont.svg#CallunaBold') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: CallunaBoldItalic;
+	    src: url('../fonts/calluna-boldit-webfont.eot');
+	    src: url('../fonts/calluna-boldit-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('../fonts/calluna-boldit-webfont.woff') format('woff'),
+	         url('../fonts/calluna-boldit-webfont.ttf') format('truetype'),
+	         url('../fonts/calluna-boldit-webfont.svg#CallunaBoldItalic') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: CallunaItalic;
+	    src: url('../fonts/calluna-it-webfont.eot');
+	    src: url('../fonts/calluna-it-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('../fonts/calluna-it-webfont.woff') format('woff'),
+	         url('../fonts/calluna-it-webfont.ttf') format('truetype'),
+	         url('../fonts/calluna-it-webfont.svg#CallunaItalic') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: CallunaLghtRegular;
+	    src: url('../fonts/calluna-light-webfont.eot');
+	    src: url('../fonts/calluna-light-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('../fonts/calluna-light-webfont.woff') format('woff'),
+	         url('../fonts/calluna-light-webfont.ttf') format('truetype'),
+	         url('../fonts/calluna-light-webfont.svg#CallunaLghtRegular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: CallunaRegular;
+	    src: url('../fonts/calluna-regular-webfont.eot');
+	    src: url('../fonts/calluna-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('../fonts/calluna-regular-webfont.woff') format('woff'),
+	         url('../fonts/calluna-regular-webfont.ttf') format('truetype'),
+	         url('../fonts/calluna-regular-webfont.svg#CallunaRegular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: CallunaSmBdRegular;
+	    src: url('../fonts/calluna-semibold-webfont.eot');
+	    src: url('../fonts/calluna-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('../fonts/calluna-semibold-webfont.woff') format('woff'),
+	         url('../fonts/calluna-semibold-webfont.ttf') format('truetype'),
+	         url('../fonts/calluna-semibold-webfont.svg#CallunaSmBdRegular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: CallunaSmBdItalic;
+	    src: url('../fonts/calluna-semiboldit-webfont.eot');
+	    src: url('../fonts/calluna-semiboldit-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('../fonts/calluna-semiboldit-webfont.woff') format('woff'),
+	         url('../fonts/calluna-semiboldit-webfont.ttf') format('truetype'),
+	         url('../fonts/calluna-semiboldit-webfont.svg#CallunaSmBdItalic') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@font-face {
+	    font-family: BebasNeueRegular;
+	    src: url('../fonts/BebasNeue-webfont.eot');
+	    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('../fonts/BebasNeue-webfont.woff') format('woff'),
+	         url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+	         url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+
+/* //////////////// default css start //////////////// */
+/*font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif;
+font-weight: normal;
+
+font-family: CallunaLghtRegular, Georgia, serif;
+font-weight: normal;
+
+font-family: CallunaRegular, Georgia, serif;
+font-weight: normal;
+
+font-family: CallunaItalic, Georgia, serif;*/
+
+body{
+	font-family: CallunaLghtRegular, Georgia, serif;
+	font-weight: normal;
+	background-color: #ffffff;
+	font-size: 24px; /* 24px */
+	line-height: 30px;
+	margin: 0 auto;
+	font-weight: 400;
+}
+
+.container{
+	margin: auto;
+}
+
+header{
+	background: #f7f7f7;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-left{
+	text-align: left;
+}
+
+h1{
+	font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif;
+	font-size: 42px;
+	line-height: 1.2;
+    font-weight: normal;
+    color: #232323;
+	text-transform: uppercase;
+}
+
+h1.serif{
+	font-family: CallunaLghtRegular, Georgia, serif;
+	font-size: 42px;
+	line-height: 1.4;
+    font-weight: normal;
+    color: #232323;
+	text-transform: initial;
+}
+
+h2{
+	font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif;
+	font-size: 38px;
+	line-height: 1.4;
+    font-weight: normal;
+    color: #232323;
+	text-transform: uppercase;
+	position: relative;
+	padding-left: 15px;
+}
+
+h2:before {
+    width: 3px;
+    height: 30px;
+    background-color: #fdca40;
+    position: absolute;
+    left: 0;
+    top: 9px;
+    content: " ";
+}
+
+h2.no-border{
+    padding-left: 0;
+}
+
+h2.no-border:before{
+    content: none;
+}
+
+h3{
+	font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif;
+	font-size: 24px;
+	line-height: 1.4;
+    font-weight: normal;
+    color: #232323;
+	text-transform: uppercase;
+}
+
+h4{
+	font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif;
+	font-size: 20px;
+	line-height: 1.4;
+    font-weight: normal;
+    color: #232323;
+	text-transform: uppercase;
+}
+
+h5{
+	font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.4;
+    font-weight: normal;
+    color: #232323;
+	text-transform: uppercase;
+}
+
+p{
+	font-family: CallunaLghtRegular, Georgia, serif;
+	font-size: 20px;
+	line-height: 1.4;
+    color: #232323;
+}
+
+p.medium{
+	font-size: 17px;
+    color: #232323;
+    line-height: 1.6;
+}
+
+p.description{
+	font-size: 17px;
+	font-style: italic;
+    color: #515151;
+}
+
+p.small-description{
+	font-size: 13px;
+	font-style: italic;
+    color: #515151;
+}
+
+p.small{
+	font-size: 15px;
+    color: #232323;
+}
+
+p.tiny{
+	font-size: 12px;
+    color: #232323;
+}
+
+.yellowColor{
+	color: #f4bf3d;  /*little dark yellow*/
+}
+
+.top-border{
+	position: relative;	
+	padding-top: 20px;
+}
+
+.top-border:after{
+    width: 30px;
+    height: 3px;
+    background-color: #fdca40;
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    content: " ";
+    transform: translateX(-50%);
+}
+
+.bottom-border{
+	position: relative;	
+	padding-bottom: 20px;
+}
+
+.bottom-border:after{
+    width: 30px;
+    height: 3px;
+    background-color: #fdca40;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    content: " ";
+    transform: translateX(-50%);
+}
+
+.col-2 {
+  float: left;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.data-blocks{
+	margin-top: 15px;
+}
+
+.data-blocks .data-item .img-block{
+	width: 107px;
+	height: 107px;
+	background: #f7f7f7;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.data-blocks .data-item .img-block img{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+.data-blocks .data-item h4{
+	text-align: center;
+}
+
+.data-blocks .data-item h5{
+	color:#777;
+}
+
+
+.flexible-columns {
+  column-width: 480px;
+  column-gap: 15px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 50px auto;
+}
+
+.flexible-columns figure {
+  margin: 0 2px 15px;
+  padding: 15px;
+  padding-bottom: 10px;
+  transition: opacity 0.4s ease-in-out;
+  display: inline-block;
+  column-break-inside: avoid;
+}
+
+.flexible-columns figure img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.flexible-columns figure figcaption {
+ 	font-family: CallunaItalic, Georgia, serif;
+    font-size: 15px;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    line-height: 1.4;
+}
+
+.left-quote{
+	position: relative;
+}
+
+
+.left-quote:before{
+	position: absolute;
+    content: "";
+    background: url(../img/inverted-comma.svg) no-repeat;
+    width: 52px;
+    height: 46px;
+    left: -66px;
+    top: 6px;
+}
+
+
+/* //////////////// default css start //////////////// */
+
+
+/* //////////////// navigation css start //////////////// */
+nav .vikram-solanki-logo{
+	padding: 16px 15px;
+	display: inline-block;
+}
+
+nav ul.navigation{
+	font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif;
+	font-weight: normal;
+	font-size:20px;
+	float: right;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+nav ul.navigation li{
+	float: right;
+}
+
+nav ul.navigation li a{
+	display: block;
+	padding: 15px 20px;
+	float: right;
+	color:#232323;
+	text-decoration: none;
+}
+
+nav ul.navigation li a.active{
+	position: relative;
+	cursor: default;
+	pointer-events: none;
+}
+
+nav ul.navigation li a.active:after{
+    width: 30px;
+    height: 3px;
+    background-color: #fdca40;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    content: " ";
+    transform: translateX(-50%);
+}
+/* //////////////// navigation css end //////////////// */
+
+
+
+/* //////////////// home css start //////////////// */
+.banner-container{
+ /* transform-style: preserve-3d;
+  perspective: 1000px;*/
+}
+
+.banner{
+  /*pointer-events: none;
+  transform: translateZ(0);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  display: flex;
+  position: relative;*/
+}
+  
+  .banner-content{
+    margin: auto;
+    text-align:center;
+   /* transform-style: preserve-3d;*/
+  }
+  
+h1.home-banner-text{
+    /*transform: translateZ(100px);*/
+	text-align: center;
+	margin: 230px auto 155px;
+}
+
+.home-banner-text span{
+	color:#fdca40;
+}
+
+.move-to-projects-arrow{
+	margin: auto;
+	text-align: center;
+}
+
+.projects{
+	margin: 100px auto 15px auto;
+}
+
+.projects .project-item{
+	background-color: #f7f7f7;
+	width:100%;
+	height: 480px;
+	margin: 40px auto;
+	position: relative;
+	display: block;	
+    transition: box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 0.1);
+}
+
+.projects .project-item:hover{
+	box-shadow: 0 6px 24px 0 rgba(35,35,35,.08);
+}
+
+/*line and h2 animate start*/
+.projects .project-item h2{
+	padding-left: 0; 
+    transition: padding 0.4s cubic-bezier(.57,.01,.43,.99);
+}
+
+.projects .project-item h2:before{
+	height: 0;
+    transition: height 0.4s cubic-bezier(.57,.01,.43,.99);
+}
+
+.projects .project-item:hover h2{
+	padding-left: 15px; 
+}
+
+.projects .project-item:hover h2:before{
+	height: 30px;
+}
+/*line and h2 animate end*/
+
+.projects .project-description{
+	padding: 35px 40px;
+	color:#232323;
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: background-color 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9), transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 0.1);
+}
+
+
+/* //////////////// home css end //////////////// */
+
+
+
+/* //////////////// about css start //////////////// */
+.about-banner-image{
+	width: 100%;
+	background-color: #f7f7f7;
+	height: 450px;
+	margin: 80px auto;
+}
+
+.about .skills{
+	margin: 100px auto;
+} 
+
+.about ul{
+	width: 90%;
+    margin: 30px auto;
+    font-size: 15px;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.about ul li{
+	padding: 8px 0;
+}
+
+.about .quote{
+	height: 279px;
+	width: 100%;
+	margin: 0px auto 100px;
+	background-color: #232323;
+	padding: 50px 50px 60px;
+	text-align: center;
+}
+
+.about .quote p{
+	font-size:24px;
+	color: #fff;
+	margin-top: 25px;
+}
+
+.about .photography{
+	margin: 140px auto 0;
+	display: block;
+}
+
+.about .photography .photo-list .photo{
+	float: left;
+	height: 280px;
+	padding: 20px;
+}
+
+.about .photography .photo-list:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.about .photography .photo-list .photo-1{
+	width: 100%;
+	height: 100%;
+	background-color: #f7f7f7;
+	background: url(../img/vikram-solanki-unsplash-image-1.jpg) no-repeat;
+}
+
+.about .photography .photo-list .photo-2{
+	width: 100%;
+	height: 100%;
+	background-color: #f7f7f7;
+	background: url(../img/vikram-solanki-unsplash-image-2.jpg) no-repeat;
+}
+
+.about .photography .photo-list .photo-3{
+	width: 100%;
+	height: 100%;
+	background-color: #f7f7f7;
+	background: url(../img/vikram-solanki-unsplash-image-3.jpg) no-repeat;
+}
+
+.about .photography .photo-list .photo-4{
+	width: 100%;
+	height: 100%;
+	background-color: #f7f7f7;
+	background: url(../img/vikram-solanki-unsplash-image-4.jpg) no-repeat;
+}
+
+.about .photography .photo-list .photo-5{
+	width: 100%;
+	height: 100%;
+	background-color: #f7f7f7;
+	background: url(../img/vikram-solanki-unsplash-image-5.jpg) no-repeat;
+}
+
+.about .photography .photo-list .photo-6{
+	width: 100%;
+	height: 100%;
+	background-color: #f7f7f7;
+	background: url(../img/vikram-solanki-unsplash-image-6.jpg) no-repeat;
+}
+/* //////////////// about css end //////////////// */
+
+
+
+/* //////////////// case study css start //////////////// */
+.case-study-banner {
+	width: 100%;
+	height: 560px;
+	display: block;
+	background-color: #f7f7f7;
+	margin-bottom: 50px;
+}
+
+.case-study-banner .content-container{
+	padding: 150px 240px 0 0;
+}
+
+.case-study .section{
+	margin: 70px auto 0;
+}
+
+.case-study .section.no-margin,
+.case-study .sub-section.no-margin{
+	margin-top: 0px;
+}
+
+.case-study .sub-section{
+	margin-top: 30px;
+}
+
+.case-study .image-with-description-right{
+	margin-top: 20px;
+	background-color: #f7f7f7;
+}
+
+.case-study .case-study-explanation-image{
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.case-study ul{
+	padding-left: 15px;
+}
+
+.case-study .sub-section ul{
+	margin-top: 10px;
+}
+
+.case-study .sub-section ul li{
+	font-size: 17px;
+	padding-bottom: 5px;
+	line-height: 1.6;
+}
+
+.case-study ol.pointers{
+	margin-left: 15px;
+}
+
+.case-study ol.pointers li,
+.case-study ul.pointers li{
+	font-size: 20px;
+	line-height: 1.8;
+}
+
+.case-study .source-sans-pro-font{
+	margin-top: 50px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 42px;
+}
+
+.case-study .poppins-font{
+	font-family: 'Poppins', sans-serif;
+}
+
+.case-study .poppins-font table td{
+	padding: 0 40px 40px 0;
+}
+
+.case-study .poppins-font .font-name{
+	font-size: 48px;
+	font-weight: 100;
+	padding: 60px 50px 50px 0;
+}
+
+.case-study .poppins-font .poppins-h1 td{
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.case-study .poppins-font .poppins-h2 td{
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.case-study .poppins-font .poppins-h3 td{
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.case-study .poppins-font .poppins-titles td{
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.4;
+}
+
+.case-study .poppins-font .poppins-cta td{
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.4;
+}
+
+.case-study .poppins-font .poppins-p td{
+	font-size: 14px;
+	font-weight: 400;
+	opacity: 0.8;
+	line-height: 1.4;
+}
+
+.case-study .source-sans-pro-font span{
+	font-size: 17px;
+	color:#777777;
+	line-height: 1.4;
+}
+
+.case-study .project-learning{
+	color:#fff;
+	width: 100%;
+	margin: 70px auto 100px;
+	background-color: #232323;
+	padding: 50px 50px 60px;
+}
+
+.case-study .project-learning h2,
+.case-study .project-learning h3,
+.case-study .project-learning p{
+	color:#fff;
+}
+
+.case-study .project-learning h3{
+	color:#fdca40;
+	margin-top: 30px;
+}
+
+.case-study .other-project-list{
+	margin: 100px 0;
+}
+
+.case-study .other-project-list:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.case-study .other-project-list .other-project-item{
+	float: left;
+	width: 50%;
+	height: 280px;
+	padding: 20px;
+}
+
+.case-study .other-project-item .other-project-link{
+	background: #f7f7f7;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    transition: box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 0.1);
+}
+
+.case-study .other-project-item .other-project-link:hover{
+	box-shadow: 0 6px 24px 0 rgba(35,35,35,.08);
+}
+
+.case-study .other-project-item .other-project-link h3{
+	background-color: #fff;
+	padding: 20px 30px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.case-study .other-project-item .other-project-link.trip-darwin{
+	background: url(../img/post-reading-navigation-trip-darwin.jpg) no-repeat;
+}
+
+.case-study .other-project-item .other-project-link.redesigning-emailers{
+	background: url(../img/post-reading-navigation-custumer-communication.jpg) no-repeat;
+}
+
+.case-study .other-project-item .other-project-link.digiway{
+	background: url(../img/post-reading-navigation-digiway.jpg) no-repeat;
+}
+/* //////////////// case study css end //////////////// */
+
+
+
+/* //////////////// footer css start //////////////// */
+.footer{
+	margin-top: 100px;
+}
+
+.footer p{
+	margin:10px auto 30px;
+}
+
+.footer ul{
+	margin:40px auto;
+}
+
+.footer ul li{
+	display: inline-block;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 0 30px;
+}
+
+.footer ul li a{
+	color:#232323;
+}
+
+.footer .disclaimer{
+	margin-top: 80px;
+}
+/* //////////////// footer css end //////////////// */
+
+
+@media (min-width: 320px){
+	h1.serif{
+		font-size: 32px;
+	}
+
+	.container{
+		width:360px;
+	}
+
+	.home-banner-text{
+		width:100%;
+		margin: 210px auto 135px;
+	}
+
+	.content-container{
+		width: 100%;
+		max-width: 360px;
+		margin: auto;
+	}
+
+	.projects .project-description{
+		width:auto;
+	}
+
+	.case-study .other-project-list .other-project-item{
+		width: 100%;
+	}
+
+	.case-study .project-learning{
+		padding: 30px 30px 40px;
+	}
+
+	.left-quote:before {
+	    width: 21px;
+	    height: 21px;
+	    left: -2px;
+	    top: -18px;
+	}
+
+	.case-study-banner .content-container{
+		padding: 340px 60px 0 0;
+	}
+
+	.case-study-banner {
+	    height: 560px;
+	}
+
+	.case-study-digiway{
+		background:url(../img/bg-case-study-digiway-mobile.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	.case-study-redesigning-emailers{
+		background:url(../img/bg-case-study-redesigning-emailers-mobile.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	.case-study-trip-darwin{
+		background:url(../img/bg-case-study-trip-darwin-mobile.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	.data-blocks .data-item{
+		display: inline-block;
+		margin: 20px 25px;
+	}
+
+	.about ul{
+	    list-style: none;
+	    padding: 0;
+	    margin: 15px 0 30px;
+	    width: 100%;
+	    text-align: center;
+	    font-size: 13px;
+	    columns: 1;
+	}
+
+	.about ul li {
+	    padding: 8px 10px 0 10px;
+	    display: inline-block;
+	    border-left: 1px solid #e7e7e7;
+	    margin: 8px 0;
+	    line-height: 1.4;
+	}
+
+	.about ul li:first-child{
+	    border-left: none;
+	    padding: 8px 10px 0 0;
+	}
+
+	.about .photography .photo{
+		width: 100%;
+	}
+
+	.projects #trip-darwin-banner.project-item{
+		background: url("../img/bg-case-study-trip-darwin-mobile.jpg") no-repeat;
+		background-size: cover;
+	}
+
+	.projects #digiway-banner.project-item{
+		background: url("../img/bg-case-study-digiway-mobile.jpg") no-repeat;
+		background-size: cover;
+	}
+
+	.projects #redesigning-emailers-banner.project-item{
+		background: url("../img/bg-case-study-redesigning-emailers-mobile.jpg") no-repeat;
+		background-size: cover;
+	}
+
+	.projects .project-description{
+		padding: 35px 40px;
+		color:#232323;
+		position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    transition: background-color 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9), transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 0.1);
+	}
+
+	.container.image-without-bg{
+		background: #f4f4f4;
+	}
+
+	.container.image-without-bg > img{
+		display: block;
+	    margin: 20px auto 5px;
+	    width: 100%;
+	    max-width: 800px;
+	    padding: 10px;
+	}
+
+	.col-2{
+		width: 100%;
+  		padding: 10px 15px 0;
+	}
+
+	.case-study .sub-section.existing-emailer-points{
+		margin-top: 0;
+  		padding-bottom: 35px;
+	}
+
+	h1.home-banner-text{
+	    /*transform: translateZ(100px);*/
+		text-align: center;
+		margin: 130px auto 130px;
+	}
+}
+
+
+@media (min-width: 576px){
+	.container{
+		width:480px;
+	}
+
+	.home-banner-text{
+		width:100%;
+		margin: 210px auto 135px;
+	}
+
+	.content-container{
+		width: 100%;
+		max-width: 480px;
+		margin: auto;
+	}
+
+	.projects .project-description{
+		width:auto;
+	}
+}
+
+@media (min-width: 768px){
+	h1.serif{
+		font-size: 42px;
+	}
+
+	.container{
+		width:640px;
+	} 
+
+	.home-banner-text{
+		width:100%;
+		margin: 210px auto 135px;
+	}
+
+	.content-container{
+		width: 100%;
+		max-width: 640px;
+		margin: auto;
+	}
+
+	.projects .project-description{
+		width:auto;
+	}
+
+	.case-study-banner .content-container{
+		padding: 150px 240px 0 0;
+	}
+
+	.case-study-digiway{
+		background:url(../img/bg-case-study-digiway.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	.case-study-redesigning-emailers{
+		background:url(../img/bg-case-study-redesigning-emailers.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	.case-study-trip-darwin{
+		background:url(../img/bg-case-study-trip-darwin.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	.data-blocks .data-item{
+		display: inline-block;
+		margin: 0 25px;
+	}
+
+	.about ul{
+	    list-style: disc;
+	    padding-left: 15%;
+	    margin: 30px auto;
+	    width: 90%;
+	    text-align: left;
+	    font-size: 15px;
+	    columns: 2;
+	}
+
+	.about ul li {
+	    padding: 8px 10px 0 10px;
+	    display: list-item;
+	    border-left: none;
+	    margin: 0;
+	    line-height: 30px;
+	}
+
+	.projects #trip-darwin-banner.project-item{
+		background: url("../img/trip-darwin-home-banner.png") no-repeat;
+		background-size: cover;
+	}
+
+	.projects #digiway-banner.project-item{
+		background: url("../img/digiway-home-banner.png") no-repeat;
+		background-size: cover;
+	}
+
+	.projects #redesigning-emailers-banner.project-item{
+		background: url("../img/redesigning-emailers-home-banner.png") no-repeat;
+		background-size: cover;
+	}
+
+	.projects .project-description{
+		padding: 35px 40px;
+		color:#232323;
+		position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    background-color: rgba(255, 255, 255, 0.75);
+	    transition: background-color 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9), transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 0.1);
+	    -webkit-backdrop-filter: blur(4px);
+	    backdrop-filter: blur(4px);
+	}
+
+	.container.image-without-bg{
+		background: #f4f4f4;
+	}
+
+	.container.image-without-bg > img{
+		display: block;
+	    margin: 20px auto 5px;
+	    width: 100%;
+	    max-width: 800px;
+	    padding: 25px;
+	}
+
+	.col-2{
+		width: 50%;
+  		padding: 25px;
+	}
+
+	.case-study .sub-section.existing-emailer-points{
+		margin-top: 30px;
+	}
+
+	h1.home-banner-text{
+		margin: 230px auto 155px;
+	}
+}
+
+@media (min-width: 992px){
+	.container{
+		width:840px;
+	}
+
+	.home-banner-text{
+		width:65%;
+		margin: 210px auto 135px;
+	}
+
+	.projects .project-description{
+		width:38%;
+	}
+
+	.about .photography .photo{
+		width: 33.33%;
+	}
+
+	.case-study .other-project-list .other-project-item {
+	    float: left;
+	    width: 50%;
+	    height: 280px;
+	    padding: 20px;
+	}
+
+	.case-study .project-learning{
+		padding: 50px 50px 60px;
+	}
+
+	.left-quote:before {
+	    width: 52px;
+	    height: 46px;
+	    left: -66px;
+	    top: 6px;
+	}
+
+	.case-study-banner {
+	    height: 560px;
+	}
+}
+
+@media (min-width: 1280px){
+	.container{
+		width:1156px;
+	}
+
+	.projects .project-description{
+		width:35%;
+	}
+}
+
