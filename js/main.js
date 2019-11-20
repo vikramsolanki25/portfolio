@@ -1,4 +1,25 @@
+
+
 $(document).ready(function(){
+
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+	  if (prevScrollpos > currentScrollPos) {
+	    document.getElementById("navbar").style.top = "0";
+	    document.getElementById("navbar").classList.add("show-shadow");
+	  } else {
+	    document.getElementById("navbar").style.top = "-80px";
+	    document.getElementById("navbar").classList.remove("show-shadow");
+	  }
+	  prevScrollpos = currentScrollPos;
+	  
+	  if (currentScrollPos == 0){
+	    document.getElementById("navbar").classList.remove("show-shadow");
+	  }
+	}
+
+
 	// var banner = $(".banner");
 
 	// $(".banner-container").on("mousemove",function(e) {  
@@ -12,4 +33,6 @@ $(document).ready(function(){
         	scrollTop: $("#projects").offset().top
     	}, 1200);
 	})
+
+
 });

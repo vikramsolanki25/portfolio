@@ -228,6 +228,16 @@ body{
 
 header{
 	background: #f7f7f7;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: block;
+	transition: top 0.3s ease-out, box-shadow 0.3s ease-out;
+	z-index: 1000;
+}
+
+.show-shadow{
+	box-shadow: 0 6px 16px 0 rgba(35,35,35,.08);
 }
 
 .text-center{
@@ -236,6 +246,71 @@ header{
 
 .text-left{
 	text-align: left;
+}
+
+a{
+	color:#1982C4;
+	text-decoration: underline;
+}
+
+.btn-primary{
+	font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif;
+	font-size:24px;
+	line-height: 1.4;
+	background-color:#fdca40;
+	padding: 20px 40px;
+	border-radius: 35px;
+	display: inline-block;
+	transition: background-color 300ms ease-out, border 300ms ease-out;
+	position: relative;
+	border:1px solid transparent;
+	color:#232323;
+	text-decoration: none;
+}
+
+.btn-primary:active{
+	background-color:#F7B500;
+	box-shadow: 0 2px 8px 0 rgba(35,35,35,0);
+}
+
+.btn-primary:hover{
+	background-color:#FFD051;
+	box-shadow: 0 2px 8px 0 rgba(35,35,35,.08);
+}
+
+.btn-primary:focus{
+	border:1px solid #F2B100;
+	box-shadow: 0 2px 8px 0 rgba(35,35,35,.08);
+}
+
+.btn-secondary{
+	font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif;
+	font-size:24px;
+	line-height: 1.4;
+	background-color:#ffffff;
+	padding: 20px 40px;
+	border-radius: 35px;
+	display: inline-block;
+	transition: background-color 300ms ease-out, border 300ms ease-out;
+	position: relative;
+	border:1px solid #fdca40;
+	color:#232323;
+	text-decoration: none;
+}
+
+.btn-secondary:active{
+	border:1px solid #F7B500;
+	box-shadow: 0 2px 8px 0 rgba(35,35,35,0);
+}
+
+.btn-secondary:hover{
+	border:1px solid #FFD051;
+	box-shadow: 0 2px 8px 0 rgba(35,35,35,.08);
+}
+
+.btn-secondary:focus{
+	border:1px solid #F2B100;
+	box-shadow: 0 2px 8px 0 rgba(35,35,35,.08);
 }
 
 h1{
@@ -616,7 +691,7 @@ h1.home-banner-text{
 }
 
 .about .skills{
-	margin: 100px auto;
+	margin: 100px auto 40px;
 } 
 
 .about ul{
@@ -704,6 +779,18 @@ h1.home-banner-text{
 	height: 100%;
 	background-color: #f7f7f7;
 	background: url(../img/vikram-solanki-unsplash-image-6.jpg) no-repeat;
+}
+
+.about .photo-list .redirect-to-unsplash{
+	margin: 30px 0;
+}
+
+.about .download-resume{
+	margin-bottom: 80px;
+}
+
+.about .quote p{
+	padding: 0px 30px;
 }
 /* //////////////// about css end //////////////// */
 
@@ -924,8 +1011,9 @@ h1.home-banner-text{
 	padding: 0 30px;
 }
 
-.footer ul li a{
+.footer a{
 	color:#232323;
+	text-decoration: none;
 }
 
 .footer .disclaimer{
@@ -1182,6 +1270,10 @@ h1.home-banner-text{
 	.projects #redesigning-emailers-banner.project-item{
 		background: url("../img/redesigning-emailers-home-banner.png") no-repeat;
 		background-size: cover;
+	}
+
+	.about ul li:first-child{
+    	padding: 8px 10px 0 10px;
 	}
 
 	.projects .project-description{
