@@ -227,7 +227,7 @@ body{
 }
 
 header{
-	background: #f7f7f7;
+	background: #fff;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -238,7 +238,6 @@ header{
 
 .show-shadow{
 	box-shadow: 0 6px 16px 0 rgba(35,35,35,.08);
-	background-color: #fff;
 }
 
 .text-center{
