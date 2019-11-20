@@ -232,12 +232,13 @@ header{
 	top: 0;
 	width: 100%;
 	display: block;
-	transition: top 0.3s ease-out, box-shadow 0.3s ease-out;
+	transition: top 0.3s ease-out, box-shadow 0.3s ease-out, background-color 0.3s ease-out;
 	z-index: 1000;
 }
 
 .show-shadow{
 	box-shadow: 0 6px 16px 0 rgba(35,35,35,.08);
+	background-color: #fff;
 }
 
 .text-center{
