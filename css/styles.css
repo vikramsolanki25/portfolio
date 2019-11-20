@@ -549,7 +549,7 @@ p.tiny{
 
 /* //////////////// navigation css start //////////////// */
 nav .vikram-solanki-logo{
-	padding: 16px 15px;
+	padding: 20px 15px 15px;
 	display: inline-block;
 }
 
@@ -568,7 +568,7 @@ nav ul.navigation li{
 
 nav ul.navigation li a{
 	display: block;
-	padding: 15px 20px;
+	padding: 20px 20px 15px;
 	float: right;
 	color:#232323;
 	text-decoration: none;
@@ -683,11 +683,20 @@ h1.home-banner-text{
 
 
 /* //////////////// about css start //////////////// */
+.about{
+	padding-top:120px; 
+}
+
+.about .about-vikram-solanki{
+	padding-top:80px; 
+}
+
 .about-banner-image{
 	width: 100%;
 	background-color: #f7f7f7;
 	height: 450px;
 	margin: 80px auto;
+	background: url(../img/vikram-solanki.png);
 }
 
 .about .skills{
