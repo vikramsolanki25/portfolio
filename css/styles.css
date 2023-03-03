@@ -1255,7 +1255,7 @@ h1.home-banner-text{
 	    width: 90%;
 	    text-align: left;
 	    font-size: 15px;
-	    columns: 2;
+	    columns: 5;
 	}
 
 	.about ul li {
@@ -1263,7 +1263,7 @@ h1.home-banner-text{
 	    display: list-item;
 	    border-left: none;
 	    margin: 0;
-	    line-height: 30px;
+	    line-height: 1.4;
 	}
 
 	.projects #trip-darwin-banner.project-item{
